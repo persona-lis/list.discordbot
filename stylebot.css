@@ -126,12 +126,16 @@ body {
 
 footer {
     text-align: center;
+    padding: 30px 20px 40px;
+    font-size: 1em;
+    color: #ccc;
+    background-color: #0d0d0d;
+    border-top: 1px solid #222;
     margin-top: 40px;
-    color: #777;
 }
 
 footer a {
-    color: #ffb300;
+    color: #ffd700;
     text-decoration: none;
 }
 
