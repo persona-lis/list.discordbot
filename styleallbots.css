@@ -49,7 +49,7 @@ body {
     color: #ffd700;
     padding: 3px 8px;
     border-radius: 5px;
-    font-size: 0.9em;
+    font-size: 1.0em;
   }
   .bot-description {
     margin-top: 8px;
@@ -121,3 +121,14 @@ body {
     color: #000;
   }
   
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #999;
+}
+
+footer a {
+    color: #ffd700; /* Золотистая ссылка */
+    text-decoration: underline;
+}
