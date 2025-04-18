@@ -36,7 +36,7 @@
 
             <div class="developer block">
                 <h3>Разработчик</h3>
-                <p>Проект был разработан <strong><a href="https://persona-lis.github.io/personainfo/" target="_blank">Persona</a></strong>. Следите за развитием проекта и узнавайте о новых функциях. Вся информация о ботах обновляется в течении нескольких дней, если Вы столкнулись с несоответствием или ошибкой, обратитесь к Разработчику.</p>
+                <p>Проект был разработан <strong><a href="https://persona-lis.github.io/personainfo/" target="_blank">Persona</a></strong>. Следите за развитием проекта и узнавайте о новых функциях. Вся информация о ботах обновляется в течение нескольких дней, если Вы столкнулись с несоответствием или ошибкой, обратитесь к Разработчику.</p>
             </div>
         </section>
 
@@ -45,42 +45,43 @@
             <div class="card-grid">
                 <div class="card">
                     <div class="emoji">🤖</div>
-                    <p>Бот 1 - Описание бота 1</p>
+                    <p>Melano - многофункциональный приватный бот для BellMine</p>
                 </div>
                 <div class="card">
                     <div class="emoji">🎵</div>
-                    <p>Бот 2 - Описание бота 2</p>
+                    <p>Hydra - музыкант сервера, задающий настроение</p>
                 </div>
                 <div class="card">
                     <div class="emoji">💬</div>
-                    <p>Бот 3 - Описание бота 3</p>
+                    <p>JuniperBot - многофункциональный бот с множеством модулей</p>
                 </div>
             </div>
         </section>
 
         <section class="cta">
             <p>Улучшите свое сообщество с лучшими ботами!</p>
-            <a href="#catalog" class="btn">Перейти в каталог</a>
+            <a href="all-bots.html" class="btn">Перейти в каталог</a>
         </section>
     </div>
 
     <!-- Подвал -->
     <footer id="contact">
-        <p class="copyright">© Melano Team (2025), при поддержке BellMine. Все права защищены.</p>
+        <p class="copyright"> Melano Team (2025), при поддержке BellMine. Все права защищены.</p>
     </footer>
+
+    <!-- Кнопка "Наверх" и скрипт -->
+    <button id="scrollTopBtn" title="Наверх">↑</button>
+
+    <script>
+        const scrollBtn = document.getElementById("scrollTopBtn");
+
+        window.onscroll = () => {
+            scrollBtn.style.display = window.scrollY > 300 ? "block" : "none";
+        };
+
+        scrollBtn.onclick = () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
 </body>
 </html>
-<!-- Вставь внутри <body>, ПЕРЕД </body> -->
-<button id="scrollTopBtn" title="Наверх">↑</button>
-
-<script>
-    const scrollBtn = document.getElementById("scrollTopBtn");
-
-    window.onscroll = () => {
-        scrollBtn.style.display = window.scrollY > 300 ? "block" : "none";
-    };
-
-    scrollBtn.onclick = () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
-</script>
