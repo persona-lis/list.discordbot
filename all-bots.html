@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Все боты | Melano</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styleallbots.css">
+</head>
+<body>
+    <div class="background-pattern"></div>
+
+    <!-- Навигация -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="index.html">О проекте</a></li>
+            <li><a href="all-bots.html">Каталог</a></li>
+            <li><a href="index.html">Контакты</a></li>
+        </ul>
+      </nav>
+      
+<body>
+  <div class="container">
+    <h1>Каталог всех ботов</h1>
+
+    <div class="bot-card">
+      <a href="lavan.html">
+        <div class="bot-card-top">
+          <h3 class="bot-name">Lavan</h3>
+          <span class="bot-tag">🛡️ Антирейд</span>
+        </div>
+        <p class="bot-description">
+          Мощный антирейд-бот с полной автоматизацией и защитой от всех видов атак.
+        </p>
+      </a>
+    </div>
+
+    <div class="bot-card">
+      <a href="musicfy.html">
+        <div class="bot-card-top">
+          <h3 class="bot-name">Musicfy</h3>
+          <span class="bot-tag">🎵 Музыка</span>
+        </div>
+        <p class="bot-description">
+          Удобный музыкальный бот с очередью, плейлистами и поддержкой Spotify.
+        </p>
+      </a>
+    </div>
+
+    <div class="bot-card">
+      <a href="modguard.html">
+        <div class="bot-card-top">
+          <h3 class="bot-name">ModGuard</h3>
+          <span class="bot-tag">🛠️ Модерация</span>
+        </div>
+        <p class="bot-description">
+          Надежный помощник модератора: автопредупреждения, фильтры и логирование.
+        </p>
+      </a>
+    </div>
+    <!-- Подвал -->
+    <footer id="contact">
+        <p class="copyright">© Melano Team (2025), при поддержке BellMine. Все права защищены.</p>
+    </footer>
+</body>
+</html>
+<!-- Вставь внутри <body>, ПЕРЕД </body> -->
+<button id="scrollTopBtn" title="Наверх">↑</button>
+
+<script>
+    const scrollBtn = document.getElementById("scrollTopBtn");
+
+    window.onscroll = () => {
+        scrollBtn.style.display = window.scrollY > 300 ? "block" : "none";
+    };
+
+    scrollBtn.onclick = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+</script>
+
+  </div>
+</body>
+</html>
