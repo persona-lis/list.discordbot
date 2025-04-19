@@ -191,25 +191,29 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Кнопка "наверх" */
 #scrollTopBtn {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    display: none;
-    background-color: #2a2a2a;
+    width: 50px;
+    height: 50px;
+    background-color: #ffb300;
     color: white;
     border: none;
     border-radius: 50%;
-    padding: 12px 16px;
-    font-size: 18px;
+    font-size: 24px;
     cursor: pointer;
-    z-index: 100;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
     box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    
+    /* Центрирование содержимого */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #scrollTopBtn:hover {
-    background-color: #444;
+    background-color: #ff8c00;
 }
 
 /* Анимации появления */
@@ -237,3 +241,43 @@ footer a:hover {
     color: #fff;
     text-decoration: underline;
 }
+
+/* Адаптация для телефонов */
+@media (max-width: 768px) {
+    .navbar ul {
+      flex-direction: column;
+      gap: 12px;
+    }
+  
+    .about-developer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about, .developer {
+      width: 100%;
+    }
+  
+    header h1 {
+      font-size: 2em;
+    }
+  
+    header h2 {
+      font-size: 1.2em;
+    }
+  
+    .card-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .btn {
+      font-size: 1em;
+      padding: 10px 20px;
+    }
+  
+    footer {
+      font-size: 0.9em;
+      padding: 20px 10px;
+    }
+  }
+  

@@ -55,25 +55,29 @@ body {
     margin-top: 8px;
     font-size: 0.95em;
   }
-  /* Кнопка "наверх" */
-#scrollTopBtn {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    display: none;
-    background-color: #2a2a2a;
+  #scrollTopBtn {
+    width: 50px;
+    height: 50px;
+    background-color: #ffb300;
     color: white;
     border: none;
     border-radius: 50%;
-    padding: 12px 16px;
-    font-size: 18px;
+    font-size: 24px;
     cursor: pointer;
-    z-index: 100;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
     box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    
+    /* Центрирование содержимого */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #scrollTopBtn:hover {
-    background-color: #444;
+    background-color: #ff8c00;
 }
 
 /* Анимации появления */
@@ -138,4 +142,65 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Адаптация для мобильных и планшетов */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+
+  .bot-card {
+    padding: 12px;
+  }
+
+  .bot-card-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .bot-name {
+    font-size: 1.1em;
+  }
+
+  .bot-tag {
+    font-size: 0.9em;
+    padding: 2px 6px;
+  }
+
+  .bot-description {
+    font-size: 0.9em;
+  }
+
+  .navbar {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  footer {
+    font-size: 0.9em;
+    padding: 20px 10px 30px;
+  }
+
+  #scrollTopBtn {
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 14px;
+    font-size: 16px;
+  }
 }

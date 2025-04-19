@@ -7,7 +7,7 @@
 body {
     font-family: 'Comfortaa', sans-serif;
     background-color: #1d1d1d; /* Темно-серый фон */
-    color: white;
+    color: #ffb300; /* white */
     line-height: 1.6;
     padding: 20px;
 }
@@ -63,6 +63,29 @@ body {
     margin: 0 auto;
 }
 
+.about-developer h3 {
+    color: #ffb300; /* или любой другой цвет */
+}
+
+
+.about-developer {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 40px;
+    color: white; /* можно заменить на нужный */
+}
+
+.about-developer .about,
+.about-developer .developer {
+    background-color: #2b2b2b; /* НЕ ТРОГАТЬ, ЦВЕТ ФОНА КАРТОЧЕК */
+    padding: 20px;
+    border-radius: 10px;
+    width: 48%;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(255, 193, 7, 0.6); /* НЕ ТРОГАТЬ, ЦВЕТ ПОДСВЕТКИ КАРТОЧЕК */
+}
+
 .card {
     background-color: #2b2b2b; /* Темный фон для карточек */
     padding: 20px;
@@ -87,7 +110,7 @@ body {
 }
 
 .card a {
-    color: #ffb300; /* Золотистый для ссылок */
+    color: #FFFFFF; /* Золотистый для ссылок #ffb300 */
     text-decoration: none;
 }
 
@@ -146,16 +169,23 @@ footer a:hover {
 /* Кнопка "наверх" */
 #scrollTopBtn {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #ffb300;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    background-color: #2a2a2a;
     color: white;
     border: none;
-    padding: 15px;
-    cursor: pointer;
-    display: none;
     border-radius: 50%;
-}
+    padding: 12px 16px;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  }
+  
+  #scrollTopBtn:hover {
+    background-color: #444;
+  }
 
 /* Мобильная версия */
 @media screen and (max-width: 768px) {
@@ -185,7 +215,7 @@ footer a:hover {
 
 h1, h2 {
     text-align: center;
-    color: #ffb300;
+    color:#E6E6FA; /* #ffb300 */
 }
 
 h2 {
@@ -194,22 +224,31 @@ h2 {
 }
 
 #scrollTopBtn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+    width: 50px;
+    height: 50px;
     background-color: #ffb300;
     color: white;
     border: none;
-    padding: 15px;
-    cursor: pointer;
-    display: none;
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    
+    /* Центрирование содержимого */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #scrollTopBtn:hover {
-    background-color: #ff8c00; /* Более насыщенный золотистый цвет */
+    background-color: #ff8c00;
 }
+
+
 .github-link {
     color: #ffb300;
     text-decoration: none;
@@ -218,3 +257,84 @@ h2 {
 .github-link:hover {
     color: #ff8c00;
 }
+
+/* Уже включённый базовый media-запрос */
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .info-blocks {
+        flex-direction: column;
+    }
+
+    .info-blocks .card {
+        width: 100%;
+    }
+
+    .search-container {
+        flex-direction: column;
+    }
+}
+
+/* Дополнительная адаптация под маленькие экраны */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .navbar ul {
+        gap: 8px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .card h3 {
+        font-size: 18px;
+    }
+
+    .card p, .card ul {
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+
+    #scrollTopBtn {
+        padding: 10px;
+        font-size: 16px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+/* Ультра-маленькие устройства */
+@media screen and (max-width: 360px) {
+    .navbar li a {
+        font-size: 14px;
+        padding: 4px 8px;
+    }
+
+    h1, h2 {
+        font-size: 20px;
+    }
+
+    .card {
+        font-size: 14px;
+    }
+
+    .search-btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
